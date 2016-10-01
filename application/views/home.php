@@ -1,6 +1,6 @@
 <div class="container">
     <h3>Revenda de Carros</h3>
-    <p>O veículo que você procura está Aqui.</p>
+    <p>O veículo que você procura, está Aqui.</p>
 </div>
 &nbsp;&nbsp;&nbsp;
 
