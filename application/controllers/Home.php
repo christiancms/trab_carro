@@ -11,12 +11,7 @@ class Home extends CI_Controller {
     }
     
     public function index() {
-        if (false)
-        {
-        $this->verifica_sessao();
-        }
-
-        $this->load->view('inc/titulo_home');
+        $this->load->view('inc/titulo');
         $this->load->view('home');
     }
     

@@ -1,21 +1,8 @@
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <html lang="en">
-        <title> Revenda Carros </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
-        <script src="<?= base_url('bootstrap/js/jquery.min.js') ?>"></script>
-        <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
-    </head>
-    <body>
-   
         <div class="container">
             <div class="row">
                 <div class="col-sm-10"><h4>Revenda Carros - Cadastro de Clientes</h4></div>
-                <div class="col-sm-2"><a href="<?= base_url('clientes/incluir') ?>" 
+                <div class="col-sm-2"><a href="<?= base_url('clientes/open_incluir') ?>"
                                          class="btn btn-success btn-sm">
                         <span class="glyphicon glyphicon-new-window"></span> Novo Cliente</a></div>
             </div>

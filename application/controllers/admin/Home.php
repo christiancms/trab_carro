@@ -15,7 +15,7 @@ class Home extends CI_Controller {
         $this->verifica_sessao();
 
 
-        $this->load->view('inc/titulo_home');
+        $this->load->view('inc/titulo');
         $this->load->view('home');
     }
     
