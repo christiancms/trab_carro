@@ -2,10 +2,6 @@
 
 class Veiculos_model extends CI_Model {
 
-   
-    
-
-
 // retorna os registros cadastrados na tabela marcas
     public function select() {
         $sql = "select v.*, m.nome as marca from veiculos v ";
@@ -39,10 +35,20 @@ class Veiculos_model extends CI_Model {
         return $this->db->delete('veiculos');
     }
 
-    public function total() {        
+    public function total() {
         $query = $this->db->query("select sum(preco) as soma from veiculos");
         $row = $query->row();
         return $row->soma;
     }
 
+    public function destaque($id) {
+        $query = $this->db->query("SELECT veiculos.destaque FROM veiculos WHERE veiculos.id = $id ");
+        $row= $query->row();
+        if($row->destaque == 1){
+            $sql = "update veiculos SET destaque = 0 WHERE id = $id ";
+        } else {
+            $sql = "update veiculos SET destaque = 1 WHERE id = $id ";
+        }
+
+    }
 }

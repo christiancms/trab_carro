@@ -30,7 +30,7 @@
                   enctype="multipart/form-data">
 
                 <input type="hidden" name="id" value="<?= $veiculo->id ?>">
-                
+
                 <div class="col-sm-8">
                     <div class="form-group">
                         <label for="modelo"> Modelo do Veículo </label>
@@ -55,8 +55,8 @@
                         <select name="marca_id" id="marca" class="form-control" required>
                             <?php foreach ($marcas as $marca) { ?>
                                 <option value="<?= $marca->id ?>"
-                                 <?= $marca->id == $veiculo->marca_id ? 'selected' : '' ?>> <?= $marca->nome ?> </option>                            
-                            <?php } ?>
+                                        <?= $marca->id == $veiculo->marca_id ? 'selected' : '' ?>> <?= $marca->nome ?> </option>                            
+                                    <?php } ?>
                         </select>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                                class="form-control" required>
                     </div>
                 </div>
-                
+
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label for="foto"> Foto </label>
@@ -87,12 +87,21 @@
                                class="form-control">
                     </div>
                 </div>
-                
+
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label for="datacad"> Data Cad. </label>
                         <input type="date" id="datacad" name="datacad" 
                                value="<?= $veiculo->datacad ?>"
+                               class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="destaque"> Destaque </label>
+                        <input type="text" id="cor" name="destaque" 
+                               value="<?= $veiculo->destaque ?>"
                                class="form-control" required>
                     </div>
                 </div>

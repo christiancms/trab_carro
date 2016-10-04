@@ -11,7 +11,7 @@
         <script src="<?= base_url('bootstrap/js/bootstrap.min.js') ?>"></script>
     </head>
     <body>
-    
+
 
 
         <div class="container">
@@ -54,6 +54,8 @@
                         <th>Data Cad.</th>
                         <th>Foto</th>
                         <th>Ações</th>
+                        <th>Destaque</th>
+
                     </tr>
                 </thead>
                 <tbody>    
@@ -74,12 +76,17 @@
                                    onclick="return confirm('Confirma Exclusão do Veículo \'<?= $veiculo->modelo ?>\'?')">
                                     <span class="glyphicon glyphicon-remove" title="Excluir"></span></a>
                             </td>
-                        </tr>    
+                            <td> 
+                                <input type="checkbox" name="destaque" id="destaque" value="" <?= $veiculo->destaque == 1 ? "checked" : "" ?> disabled="disabled"><br>
+                            </td>
+
+                        </tr>   
+
                     <?php } ?>
                     <tr>
                         <td colspan="3"> Total R$: </td>
                         <td> <?= number_format($soma, 2, ',', '.') ?> </td>
-                        <td colspan="5"> &nbsp; </td>
+                        <td colspan="8"> &nbsp; </td>
                     </tr>
 
                 </tbody>
