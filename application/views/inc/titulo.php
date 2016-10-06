@@ -39,7 +39,7 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Veículos</a></li>
+                                <li><a href="<?= base_url('relatorio/veiculos') ?>">Veículos</a></li>
                                 <li><a href="<?= base_url('relatorio/clientes') ?>">Clientes</a></li>
                                 <li><a href="#"> Propostas</a></li>
                                 <li><a href="#">Marcas</a></li>
