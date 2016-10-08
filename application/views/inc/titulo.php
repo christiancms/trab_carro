@@ -47,7 +47,6 @@
 
 
 
-                        <li><a href="#">Utilitários</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?= $this->session->nome ?></a></li>
