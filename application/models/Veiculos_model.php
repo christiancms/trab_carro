@@ -41,14 +41,11 @@ class Veiculos_model extends CI_Model {
         return $row->soma;
     }
 
-    public function destaque($id) {
-        $query = $this->db->query("SELECT veiculos.destaque FROM veiculos WHERE veiculos.id = $id ");
-        $row= $query->row();
-        if($row->destaque == 1){
-            $sql = "update veiculos SET destaque = 0 WHERE id = $id ";
-        } else {
-            $sql = "update veiculos SET destaque = 1 WHERE id = $id ";
-        }
+    public function destaque() {
+        $sql = "select v.*, m.nome as marca from veiculos v ";
+        $sql .= "inner join marcas m on v.marca_id = m.id where destaque = 1 order by v.id";
+        // result: adequado para uma lista de dados (foreach)
+        return $this->db->query($sql)->result();
 
     }
 }

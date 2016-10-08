@@ -12,7 +12,8 @@ class Home extends CI_Controller {
     
     public function index() {
         $this->load->view('inc/titulo');
-        $this->load->view('home');
+        $dados['veiculos'] = $this->veiculosM->destaque();
+        $this->load->view('home',$dados);
     }
     
     public function login() {
