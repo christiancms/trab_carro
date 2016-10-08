@@ -74,6 +74,7 @@ class Veiculos extends CI_Controller {
     }
 
     public function alterar($id) {
+        $this->load->view('inc/titulo');
         // obtém os campos do veículo cujo id foi passado por parâmetro
         $dados['veiculo'] = $this->veiculosM->find($id);
 
@@ -87,6 +88,7 @@ class Veiculos extends CI_Controller {
     }
 
     public function grava_alteracao() {
+
         // recebe os dados do formulário
         $dados = $this->input->post();
 
