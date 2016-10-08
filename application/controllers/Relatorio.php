@@ -68,14 +68,15 @@ class Relatorio extends CI_Controller {
         // Adiciona uma pagina
         $this->pdf->AddPage();
 
-
+        $linhaFoto = 19;    
         // percore as linhas obtidas
         foreach ($dados as $linha) {
-            $this->pdf->Cell(15, 8, $linha->id . ' ', 0, 0, 'R');
-            $this->pdf->Cell(60, 8, utf8_decode($linha->modelo));
-            $this->pdf->Cell(60, 8, $linha->ano);
-            $this->pdf->Cell(60, 8, utf8_decode($linha->preco), 0, 1);
-            $this->pdf->Image('fotos/' . utf8_decode($linha->foto), 1, 1);
+            $linhaFoto = $linhaFoto + 19;
+            $this->pdf->Cell(15, 19, $linha->id . ' ', 0, 0, 'R');
+            $this->pdf->Cell(60, 19, utf8_decode($linha->modelo));
+            $this->pdf->Cell(60, 19, $linha->ano);
+            $this->pdf->Cell(60, 19, utf8_decode($linha->preco), 0, 1);
+            $this->pdf->Image('fotos/' . utf8_decode($linha->foto), 170, $linhaFoto, 25, 15);
         }
 
         // gera relatório

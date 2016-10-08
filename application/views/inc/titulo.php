@@ -35,7 +35,7 @@
                             </ul>
                         </li>
                         <li><a href="#">Movimentos</a></li>
-                        <li><a href="#">Gráficos</a></li>
+                        <li><a href="<?= base_url('grafico/clientes') ?>">Gráficos</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<span class="caret"></span></a>
                             <ul class="dropdown-menu">

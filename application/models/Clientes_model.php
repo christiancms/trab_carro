@@ -12,7 +12,7 @@ class Clientes_model extends CI_Model implements iCadastro {
     }
 
     public function insert($reg) {
-         return $this->db->insert('clientes', $reg);
+        return $this->db->insert('clientes', $reg);
     }
 
     public function update($reg) {
@@ -30,4 +30,12 @@ class Clientes_model extends CI_Model implements iCadastro {
         return $query->row();
     }
 
+    public function selectGraph() {
+        $sql = "select year(datacad) as ano, count(if(cidade='Pelotas', 1, null)) ";
+        $sql .= "as num_pel, count(if(cidade<>'Pelotas', 1, null)) as num_outras ";
+        $sql .= "from clientes group by year(datacad)";
+        $query = $this->db->query($sql);
+        // result retorna um array de dados
+        return $query->result();
+    }
 }

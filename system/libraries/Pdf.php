@@ -38,7 +38,7 @@ class CI_Pdf extends FPDF {
         // define a fonte do texto dos relatÃ³rios do sistema
         $this->SetFont("Arial", "B", 15);
         // insere o tÃ­tulo maior do cabeÃ§alho
-        $this->Cell(0, 10, "Revenda Herbie", 0, 0, "C");
+        $this->Cell(0, 10, "Revenda Carros", 0, 0, "C");
         // quebra de linha
         $this->Ln(7);
         $this->SetFontSize(12);

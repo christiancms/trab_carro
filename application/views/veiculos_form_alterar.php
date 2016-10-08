@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Revenda Herbie </title>
+        <title> Revenda Carros </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
@@ -13,7 +13,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Revenda Herbie</a>
+                    <a class="navbar-brand" href="#">Revenda Carros</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="<?= base_url() ?>">Home</a></li>
@@ -24,7 +24,7 @@
         </nav>
 
         <div class="container">
-            <h4>Revenda Herbie - Alteração de Veículos</h4>
+            <h4>Revenda Carros - Alteração de Veículos</h4>
 
             <form method="post" action="<?= base_url('veiculos/grava_alteracao') ?>"
                   enctype="multipart/form-data">

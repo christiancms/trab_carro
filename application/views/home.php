@@ -2,6 +2,7 @@
     <h3>Revenda de Carros</h3>
     <p>O veículo que você procura, está Aqui.</p>
 </div>
+
 &nbsp;&nbsp;&nbsp;
 <div class="col-sm-3">&nbsp;</div>
 <div class="col-sm-6">

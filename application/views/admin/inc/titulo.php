@@ -20,8 +20,8 @@
                     </button>
                     <a class="navbar-brand" href="#">Revenda Carros</a>
                 </div>
-                
-                
+
+
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?= base_url() ?>">Home</a></li>
@@ -32,6 +32,8 @@
                                 <li><a href="<?= base_url('clientes') ?>">Clientes</a></li>
                                 <li><a href="<?= base_url('marcas') ?>">Marcas</a></li>
                                 <li><a href="#">Usuários</a></li>
+                                
+                                </form>
                             </ul>
                         </li>
                         <li><a href="#">Movimentos</a></li>
@@ -40,7 +42,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?= base_url('relatorio/veiculos') ?>Veículos</a></li>
-                                <li><a href="<?= base_url('relatorio/clientes') ?>Clientes</a></li>
+                                       <li><a href="<?= base_url('relatorio/clientes') ?>Clientes</a></li>
                                 <li><a href="#"> Propostas</a></li>
                                 <li><a href="#">Marcas</a></li>
                                 <li><a href="#">Usuários</a></li>

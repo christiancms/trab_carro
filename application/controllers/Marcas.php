@@ -13,7 +13,7 @@ class Marcas extends CI_Controller {
         $this->load->view('inc/titulo');
         $this->load->model('marcas_model', 'marcasM');
         $dados['marcas'] = $this->marcasM->select();
-        $dados['marcas'] = $this->marcasM->select();
+     
         $this->load->view('manut_marcas', $dados);
     }
 
