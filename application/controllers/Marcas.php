@@ -13,11 +13,12 @@ class Marcas extends CI_Controller {
         $this->load->view('inc/titulo');
         $this->load->model('marcas_model', 'marcasM');
         $dados['marcas'] = $this->marcasM->select();
-     
+
         $this->load->view('manut_marcas', $dados);
     }
 
     public function open_incluir() {
+        $this->load->view('inc/titulo');
         $this->load->model('marcas_model', 'marcasM');
         $dados['marcas'] = $this->marcasM->select();
         $this->load->view('form_marcas_inc', $dados);

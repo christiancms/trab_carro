@@ -3,7 +3,7 @@
     <br/>
     <form method="post" action="<?= base_url('Marcas/incluir') ?>" enctype="multipart/form-data">
 
-        <div class="col-sm-8">
+        <div class="col-sm-1">
             <div class="form-group">
                 <label for="marca">Marca</label>
                 <input type="text" name="nome" id="marcas" class="form-control" required>

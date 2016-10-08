@@ -1,14 +1,13 @@
 <div class="container">
-    <br/>
+    <br><br>
     <div class="row">
         <div class="col-sm-10"></div>
         <div class="col-sm-2">
             <a href="<?= base_url('Marcas/open_incluir') ?>" class="btn btn-info btn-link">
-                <span class="glyphicon glyphicon-new-window"></span> Nova Marca
-            </a>
+                <span class="glyphicon glyphicon-new-window"></span> Nova Marca</a>
         </div>
     </div>
-    <br/>
+   
 
     <?php
     //verifica se existe variavel de sessao
@@ -29,10 +28,11 @@
     }
     ?>
 
-    <br/>
+    
+    <div class="col-lg-1">
     <table class="table table-hover">
         <thead>
-        <tr style="background-color: #4CAF50; color: white;">
+            <tr style="background-color: #ffffff; color: #000;">
             <th>ID</th>
             <th>Marca</th>
         </tr>
