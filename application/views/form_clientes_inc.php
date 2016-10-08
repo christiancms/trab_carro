@@ -12,20 +12,14 @@
             </div>
         </div>
 
-        <div class="col-sm-8">
+        <div class="col-sm-4">
             <div class="form-group">
                 <label for="email"> E-mail: </label>
                 <input type="text" id="email" name="email"
                        class="form-control" required>
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="form-group">
-                <label for="cep"> CEP: </label>
-                <input type="text" id="cep" name="cep"
-                       class="form-control">
-            </div>
-        </div>
+
 
         <div class="col-sm-8">
             <div class="form-group">
@@ -34,31 +28,41 @@
                        class="form-control" required>
             </div>
         </div>
-        <div class="col-sm-8">
+
+        <div class="col-sm-4">
             <div class="form-group">
                 <label for="num"> Número: </label>
                 <input type="text" id="num" name="num"
                        class="form-control">
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="form-group">
-                <label for="bairro"> Bairro: </label>
-                <input type="text" id="bairro" name="bairro"
-                       class="form-control">
-            </div>
-        </div>
-        <div class="col-sm-8">
+
+        <div class="col-sm-3">
             <div class="form-group">
                 <label for="cidade"> Cidade: </label>
                 <input type="text" id="cidade" name="cidade"
                        class="form-control" required>
             </div>
         </div>
-        <div class="col-sm-8">
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="bairro"> Bairro: </label>
+                <input type="text" id="bairro" name="bairro"
+                       class="form-control">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="cep"> CEP: </label>
+                <input type="text" id="cep" name="cep" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-3">
             <div class="form-group">
                 <label for="estado"> UF: </label>
-                <select name="estado">
+                <select class="form-control" name="estado">
                     <option value="AC"> Acre </option>
                     <option value="AL"> Alagoas </option>
                     <option value="AP"> Amapá </option>
@@ -89,13 +93,13 @@
                 </select>
             </div>
         </div>
+
         <input type="hidden" id="ativo" name="ativo" value="1">
 
         <div class="col-sm-12">
             <button type="submit" class="btn btn-success">Enviar</button>
             <button type="reset" class="btn btn-default">Limpar</button>
         </div>
-    </form>
-</div>
-</body>
-</html>
+
+        </body>
+        </html>
