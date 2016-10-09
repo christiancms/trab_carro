@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    background-color: #1b6d85;
+}
+#linha {
+    background-color: #101010;
+    width: 100%;
+}
+#myNavbar, .navbar-header, .dropdown-menu {
+    background-color: #101010;      
+}
+#link-white a {
+    color: #fff;
+}
+#link-white li a:hover {
+    background-color: #101010;
+    text-decoration: underline; 
+    color: #fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+/*    min-width: 150px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;   
+}
+.form-wrapper {
+    width: 245px;
+}
+.form-wrapper input[type="text"] {
+    width: 200px;
+}
+#center {
+    text-align: center;
+}
+.logo-responsivo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 45px;
+}
+.navbar-brand {
+    margin-top: -10px;
+}
+#line-one {
+    margin-top: -20px;
+    width: 100%;    
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+.form-signin {
+    padding-bottom: 40px;
+}
+.form-signin input[type="email"] {
+    margin-bottom: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.formulario {
+   margin: auto;
+   max-width: 400px;
+}
+#numero, #cep {
+    width: 48%;
+   display: inline-block;
+}
+.col-md-7 {
+    border-left: 1px solid #eee;    
+}
+.col-md-7 h2, .col-md-7 h4 {
+    padding-left: 20px;    
+}
+.modal-body {
+    background-color: #f9e7e7;
+}
+/*h3, h4 {
+    font-weight: bold;
+    color: #38393d;
+}
+#menuUm {    
+    float: left;
+    margin-top: 20px;
+    margin-left: 6px;   
+}
+#menuUm li {
+    display: inline-block;
+    margin-right: 12px;    
+}
+#menuUm li a, #menuDois li a {
+    color: #fff;
+}
+#menuDois {    
+    float: right;
+    margin-top: 20px;
+    margin-right: 6px;    
+}
+#menuDois li {
+    display: inline-block;
+    margin-left: 12px;
+} 
+#principal {
+    text-align: center;
+    padding: 50px 0px 100px 0px;     
+}
+#principal h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: #ffffff;
+}
+#principal h4 a {
+    color: #14924A;
+    font-weight: bold;
+}
+#principal h4 a:hover {
+    text-decoration: none;
+}
+.social li {
+    display: inline-block;
+    margin-right: 2px;
+}
+#telefones {
+    color: #d9dce0;
+}
+#linhaUm {
+    width: 100%;    
+    background-color: #ffffff;
+}
+#eu {
+    text-align: center;
+    color: #38393d;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#descricao {
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #d9dce0;
+    padding: 20px;
+    color: #38393d;
+    font-size: 16px;    
+}
+#descricao a {
+    color: #14924A;
+    font-weight: bold;
+}
+.servicos {
+    border: 1px solid #d9dce0;
+    color: #38393d;
+    font-size: 16px;
+    padding: 20px; 
+    margin-bottom: 5px;
+}
+.fonteinclinada {
+    font-style: italic;
+}
+.botaoDireita {
+    text-align: right;
+    margin-top: 5px;
+}
+.botao {     
+    color: #fff;
+    padding: 4px 8px 4px 8px;
+    background-color: #14924A; 
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.botao:hover {
+   background-color: #429867;
+}
+#linhaDois {
+    background-color: #f5f5f5;
+    border-top: 1px solid #DBDBDC; 
+    padding-top: 20px;
+}
+#realizados {
+    text-align: center;    
+}
+#realizados li {
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+}
+#rodapeEsquerdo {
+    float: left;
+    text-align: center;
+    padding: 25px 0px 20px 0px;   
+    color: #d9dce0;
+}
+#rodapeEsquerdo h4 {
+    color: #fff;    
+}
+#rodapeDireito {
+    text-align: center;
+    float: right;
+    padding: 30px 0px 20px 0px; 
+    font-size: 14px; 
+}
+#rodapeDireito a {   
+    color: #fff;
+    font-weight: bold;
+}
+#rodapeDireito li {
+    display: inline-block;    
+    color: #fff;     
+}
+#subirTopo {  
+    position: fixed;
+    bottom: 25px;    
+    cursor: pointer;        
+    right: 5px;   
+}
+
+*/

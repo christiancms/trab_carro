@@ -46,6 +46,11 @@ class Veiculos_model extends CI_Model {
         $sql .= "inner join marcas m on v.marca_id = m.id where destaque = 1 order by v.id";
         // result: adequado para uma lista de dados (foreach)
         return $this->db->query($sql)->result();
+    }
 
+    public function pesquisa($palavra) {
+        $sql = "SELECT * FROM veiculos WHERE modelo=?";
+        $query = $this->db->query($sql, array($palavra));
+        return $query->result();  //row
     }
 }

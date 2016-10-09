@@ -171,4 +171,11 @@ class Veiculos extends CI_Controller {
         // result retorna um array de dados
         return $query->result();
     }
+
+    public function pesquisar() {
+        $palavra = $this->input->post();
+        $dados['veiculos'] = $this->veiculosM->pesquisa($palavra);
+        $this->load->view('header-2');
+        $this->load->view('view-search-2', $dados);
+    }
 }

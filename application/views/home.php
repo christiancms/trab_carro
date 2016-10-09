@@ -123,67 +123,83 @@
         }
     }
 </style>
-<div class="container">
-    <h3>Revenda de Carros</h3>
-    <p>O veículo que você procura, está Aqui.</p>
+<center>
+    <div class="col-lg-8">
+        <img src="imagens/logo.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+    </div>
+    <div class="col-xs-4">
+        <input type="text" class="form-control" placeholder="Modelo do Veiculo"><br>
+        <button type="button" class="btn btn-info">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesquisar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</button>
+
+    </div>
+</center><br>
+
+<div class="container-fluid">
+    
+     
+     
+     </div>
 
 
-    <?php foreach ($veiculos as $veiculo) { ?>
 
-        <div class="col-sm-2" style="text-align:center; background-color: lightgray; color: black">
-            <h3><?= $veiculo->marca ?>-<?= $veiculo->modelo ?></h3>
-            <img src="./fotos/<?= $veiculo->foto ?>" style="width: 120px; height: 80px;">
-            <h5>R$ <?= number_format($veiculo->preco, 2, ',', '.') ?></h5>
-            <h6>Ano: <?= $veiculo->ano ?></h6>
-            <button data-toggle="collapse" data-target="#opcoes" class="btn btn-danger btn-block">Enviar Proposta
-            </button>
-            </br>
-            <div id="opcoes" class="collapse">
-
-                <button onclick="document.getElementById('id01').style.display='block'">Com Cadastrado</button>
-                <a href="<?= base_url('clientes/open_incluir') ?>" class="btn btn-success btn-block" role="button"> Sem
-                    Cadastro </a>
-                &nbsp;
-            </div>
-
-
-            <!-- Button to open the modal login form -->
-
-
-            <!-- The Modal -->
-            <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-                <!-- Modal Content -->
-                <form class="modal-content animate" action="action_page.php">
-                    <div class="imgcontainer">
-                        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                    </div>
-
-                    <div class="container">
-                        <label><b>Usuário</b></label>
-                        <input type="text" placeholder="Nome do Usuário" name="uname" required>
-
-                        <label><b>Senha</b></label>
-                        <input type="password" placeholder="Senha" name="psw" required>
-
-                        <button type="submit">Login</button>
-
-                    </div>
-
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Cancelar
-                        </button>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    <?php } ?>
+<div class='col-xs-12'>
+    <h3>Veiculos em Destaque</h3><br><br>
 </div>
 
+<div class="col-sm-12">
+<?php foreach ($veiculos as $veiculo) { ?>
+    <div class="col-sm-2" style="text-align:center; background-color: lightgray; color: black">
+        <h3><?= $veiculo->marca ?>-<?= $veiculo->modelo ?></h3>
+        <img src="./fotos/<?= $veiculo->foto ?>" style="width: 120px; height: 80px;">
+        <h5>R$ <?= number_format($veiculo->preco, 2, ',', '.') ?></h5>
+        <h6>Ano: <?= $veiculo->ano ?></h6>
+        <button data-toggle="collapse" data-target="#opcoes" class="btn btn-danger btn-block">Enviar Proposta
+        </button>
+        </br>
+        <div id="opcoes" class="collapse">
 
+            <button onclick="document.getElementById('id01').style.display = 'block'">Com Cadastrado</button>
+            <a href="<?= base_url('clientes/open_incluir') ?>" class="btn btn-success btn-block" role="button"> Sem Cadastro </a>
+            &nbsp;
+        </div>
+
+
+        <!-- Button to open the modal login form -->
+
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="action_page.php">
+                <div class="imgcontainer">
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label><b>Usuário</b></label>
+                    <input type="text" placeholder="Nome do Usuário" name="uname" required>
+
+                    <label><b>Senha</b></label>
+                    <input type="password" placeholder="Senha" name="psw" required>
+
+                    <button type="submit">Login</button>
+
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display = 'none'"
+                            class="cancelbtn">Cancelar
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+<?php } ?>
+</div>
 </body>
 </html>
 
