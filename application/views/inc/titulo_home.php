@@ -17,10 +17,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?= $this->session->nome ?></a></li>
+                            <li><a href="<?= base_url('home/sair') ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
                     </button>
-                    <a class="navbar-brand" href="#">Revenda Carros</a>
+                    <a class="navbar-brand" href="#">Revenda Carros
+                       
+                    </a>
                 </div>
-    </nav>
+        </nav>
+
 
 
 
